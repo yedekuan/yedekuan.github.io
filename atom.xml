@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-14T08:25:48.838Z</updated>
+  <updated>2018-08-14T08:33:31.962Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>对时</title>
     <link href="http://yoursite.com/2018/08/14/GPS%E9%80%9A%E8%AE%AF/"/>
     <id>http://yoursite.com/2018/08/14/GPS通讯/</id>
     <published>2018-08-14T05:23:03.037Z</published>
-    <updated>2018-08-14T08:25:48.838Z</updated>
+    <updated>2018-08-14T08:33:31.962Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、GPS规约"><a href="#一、GPS规约" class="headerlink" title="一、GPS规约"></a>一、GPS规约</h2><h3 id="1、-ST系列-科汇公司"><a href="#1、-ST系列-科汇公司" class="headerlink" title="1、 ST系列(科汇公司)"></a>1、 ST系列(科汇公司)</h3><p>程序名 ptKHGpsttyd</p><p><img src="http://ydkblog.oss-cn-hangzhou.aliyuncs.com/18-8-14/64455898.jpg" alt="ST"></p><p>其中，</p><p>S 与秒脉冲（PPS）的前沿对齐，装置收到卫星信号则发送字符S， 装置失步就停发字符S，S的ASCII码为53H；</p><p>T 为发送时间信息的信息头，T的ASCII码为54H；</p><p>然后依次是小时的十位、个位、分钟的十位、个位…直到年的个位信息，分别为0-9的ASCII码（30H-39H）；</p><p>校验字节是小时的十位、个位、分钟的十位、个位…直到年的个位信息逐字节异或后再非运算的结果（即：异或非校验）；</p><p>A为发送时间信息的信息结尾，A的ASCII码为41H。 </p><p>例：2006年6月15日23时19分47秒，与卫星同步，所发报文为</p><p>​        53H 54H 32H 33H 31H 39H 34H 37H 31H 35H 30H 36H 32H 30H 30H 36H F3H 41H</p><p><strong>通讯参数</strong> 报文数据位8位，停止位1位，无校验，波特率9600 </p>]]></content>
     
